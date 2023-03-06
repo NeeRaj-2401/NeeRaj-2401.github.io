@@ -1,41 +1,25 @@
 :root {
 
-  /**
-   * colors
-   */
-
   /* gradient */
 
-  --bg-gradient-onyx: linear-gradient(to bottom right,
-      hsl(240, 1%, 25%) 3%,
-      hsl(0, 0%, 19%) 97%);
-  --bg-gradient-jet: linear-gradient(to bottom right,
-      hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(to bottom right,
-      hsl(45, 100%, 71%) 0%,
-      hsla(36, 100%, 69%, 0) 50%);
-  --bg-gradient-yellow-2: linear-gradient(135deg,
-      hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(to bottom right,
-      hsl(0, 0%, 25%) 0%,
-      hsla(0, 0%, 25%, 0) 50%);
-  --text-gradient-yellow: linear-gradient(to right,
-      hsl(45, 100%, 72%),
-      hsl(35, 100%, 68%));
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right,hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --bg-gradient-blue-1: linear-gradient(to bottom right, #4169E1,hsla(36, 100%, 69%, 0) 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, hsla(45, 100%, 71%, 0.251) 0%,hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  --text-gradient-blue: linear-gradient(to right,#87CEFA, #4682B4  );
 
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
+  --eerie-black-2: hsl(240deg 2% 6%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --text-blues: #b9e3f8;
+  --some-blue: #a9d7f3;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -132,12 +116,12 @@ textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--text-blues);
   color: var(--smoky-black);
 }
 
 :focus {
-  outline-color: var(--orange-yellow-crayola);
+  outline-color: var(--text-blues);
 }
 
 html {
@@ -183,7 +167,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: var(--text-blues);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -257,7 +241,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 3px;
 }
 
@@ -274,7 +258,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: var(--text-blues);
   border-radius: 5px;
 }
 
@@ -372,7 +356,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--orange-yellow-crayola);
+  color: var(--text-blues);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -392,7 +376,7 @@ main {
 
 .info_more-btn:hover,
 .info_more-btn:focus {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--bg-gradient-blue-1);
 }
 
 .info_more-btn:hover::before,
@@ -510,7 +494,7 @@ main {
 }
 
 .navbar-link.active {
-  color: var(--orange-yellow-crayola);
+  color: var(--text-blues);
 }
 
 
@@ -549,6 +533,7 @@ main {
 .service-title {
   margin-bottom: 20px;
 }
+
 
 .service-list {
   display: grid;
@@ -589,15 +574,6 @@ main {
 .service-item-title {
   margin-bottom: 7px;
 }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
-}
-
-
 
 
 /*-----------------------------------*\
@@ -644,7 +620,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--some-blue);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -666,17 +642,10 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
-
-.timeline-text {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
 
 /**
  * skills 
@@ -716,7 +685,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   height: 100%;
   border-radius: inherit;
 }
@@ -788,7 +757,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: var(--text-blues);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -844,7 +813,7 @@ main {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  color: var(--text-blues);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -873,7 +842,7 @@ main {
 }
 
 .form-btn:hover {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--bg-gradient-blue-1);
 }
 
 .form-btn:hover::before {
@@ -1477,9 +1446,5 @@ main {
   /**
 	 * RESUME
 	 */
-
-  .timeline-text {
-    max-width: 700px;
-  }
 
 }
