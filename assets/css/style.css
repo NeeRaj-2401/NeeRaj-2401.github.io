@@ -250,7 +250,9 @@ article.active {
 }
 
 
-
+.justified {
+  text-align: justify;
+}
 
 
 /*-----------------------------------*\
