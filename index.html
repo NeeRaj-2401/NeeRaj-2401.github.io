@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niraj Yadav | Developer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niraj Yadav | Developer</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Niraj Yadav"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Niraj Yadav">Niraj Yadav</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Niraj Yadav" width="80">
-        </figure>
+            <p class="title">SoftWare Engineer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Niraj Yadav">Niraj Yadav</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">SoftWare Engineer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a target="_blank" href="mailto:neerajyadav572233@gmail.com" class="contact-link">neerajyadav572233</a>
-            </div>
-
-          </li>
-          <!--
+                <a
+                  target="_blank"
+                  href="mailto:neerajyadav572233@gmail.com"
+                  class="contact-link"
+                  >neerajyadav572233</a
+                >
+              </div>
+            </li>
+            <!--
           <li class="contact-item">
 
             <div class="icon-box">
@@ -94,7 +100,7 @@
           </li>
           -->
 
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -108,160 +114,172 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Education</p>
+                <p class="contact-link">B.E / IT</p>
+              </div>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Education</p>
-              <p class="contact-link">B.E / IT</p>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
+                <address>Mumbai, IN</address>
+              </div>
+            </li>
+          </ul>
 
-          <li class="contact-item">
+          <div class="separator"></div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Mumbai, IN</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <!-- <li class="social-item">
+          <ul class="social-list">
+            <!-- <li class="social-item">
             <a target="_blank" href="https://www.instagram.com/neeraj_2401/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li> -->
 
-          <li class="social-item">
-            <a target="_blank" href="https://www.linkedin.com/in/niraj2401/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/niraj2401/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a target="_blank" href="https://github.com/NeeRaj-2401" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://github.com/NeeRaj-2401"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a target="_blank" href="https://leetcode.com/neeraj_2401/" class="social-link">
-              <ion-icon name="code-slash-outline"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://leetcode.com/neeraj_2401/"
+                class="social-link"
+              >
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+          </ul>
+        </nav>
 
-
-        </ul>
-
-      </nav>
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p class="justified">
+              A tech enthusiast based in India, experienced in full-stack
+              development and cloud infrastructure. Worked with React.js,
+              SvelteKit, Express.js, PostgreSQL, TimescaleDB, Three.js, and
+              more. Comfortable with Docker, Nginx, and Linux, yet always
+              exploring new technologies. Outside of coding, I enjoy tweaking my
+              personal Archcraft setup xD.
+            </p>
+          </section>
 
-        <section class="about-text">
-          <p>
-            A tech enthusiast based in India, experienced in full-stack development and cloud infrastructure. Worked with React.js, SvelteKit, Express.js, PostgreSQL, TimescaleDB, Three.js, and more. Comfortable with Docker, Nginx, and Linux, yet always exploring new technologies.
-            Outside of coding, I enjoy tweaking my personal Archcraft setup xD.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - Skills & experience
         -->
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
             </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-        
-          <ol class="timeline-list">
-        
-            <li class="timeline-item">
-              <h4 class="h3 timeline-item-title">
-                Software Engineer
-                <a href="https://zwillinglabs.com" target="_blank" class="company-link">, Zwilling Labs</a>
-              </h4>
-              <span>Mar 2024 — Present</span>
-              <p class="timeline-text">
-                Leading project at Zwilling Labs, focusing on delivering comprehensive real-time monitoring platforms and digital twin architecture using SvelteKit, Express.js, PostgreSQL, and TimescaleDB, with AI integration.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Project Research Assistant (Full-Stack Developer)
-                <a href="https://iitb.ac.in" target="_blank" class="company-link">, IIT Bombay</a>
-              </h4>
-              <span>Jul 2023 — Mar 2024</span>
-              <p class="timeline-text">
-                Developed real-time machine dashboards with Three.js and created a Grafana plugin for 3D visualizations, along with LLM-powered Document GPT application.
-              </p>
-            </li>
-        
-          </ol>
-        </section>     
 
-        <!-- <section class="skill">
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h3 timeline-item-title">
+                  Software Engineer,
+                  <a
+                    href="https://zwillinglabs.ai/"
+                    target="_blank"
+                    class="company-link"
+                  >
+                    Zwilling Labs</a
+                  >
+                </h4>
+                <span>Mar 2024 — Present</span>
+                <p class="timeline-text justified">
+                  Leading project at Zwilling Labs, focusing on delivering
+                  comprehensive real-time monitoring platforms and digital twin
+                  architecture using SvelteKit, Express.js, PostgreSQL, and
+                  TimescaleDB, with AI integration.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Project Research Assistant,
+                  <a
+                    href="https://iitb.ac.in"
+                    target="_blank"
+                    class="company-link"
+                  >
+                    IIT Bombay</a
+                  >
+                </h4>
+                <span>Jul 2023 — Mar 2024</span>
+                <p class="timeline-text justified">
+                  Developed real-time machine dashboards with Three.js and
+                  created a Grafana plugin for 3D visualizations, along with
+                  LLM-powered Document GPT application.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- <section class="skill">
 
           <h3 class="h2 skills-title">My skills</h3>
 
@@ -322,7 +340,7 @@
 
         </section> -->
 
-        <!-- 
+          <!-- 
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -352,114 +370,143 @@
 
         </section> -->
 
-
-        <!--
+          <!--
         - #Download RESUME Button
       -->
 
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1XIDL9Yi8pgROf2Zm5F2pGPufr_EjqYPt/view"
+            class="form-btn"
+          >
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>View Resume</span>
+          </a>
+        </article>
 
-      <a target="_blank" href="https://drive.google.com/file/d/1XIDL9Yi8pgROf2Zm5F2pGPufr_EjqYPt/view" class="form-btn">
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>Download Resume</span>
-      </a>
-
-
-
-      </article>
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <!--
+        <!--
         - #Projects
       -->
 
-      <article class="projects" data-page="projects">
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a target="_blank" href="https://reac-tube.vercel.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-        <section class="projects">
+                    <img
+                      src="./assets/images/reacTube.JPG"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
+                  <h3 class="project-title">ReacTube</h3>
 
-          <ul class="project-list">
+                  <p class="project-category">
+                    Privacy Friendly & Distraction Free Youtube based on Piped
+                    APIs
+                  </p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" href="https://reac-tube.vercel.app/">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a target="_blank" href="https://reac-radio.vercel.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/reacRadio.JPG"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/reacTube.JPG" alt="finance" loading="lazy">
-                </figure>
+                  <h3 class="project-title">ReacRadio</h3>
 
-                <h3 class="project-title">ReacTube</h3>
+                  <p class="project-category">
+                    Radio streaming web App using radio-browser.info API.
+                  </p>
+                </a>
+              </li>
 
-                <p class="project-category">Privacy Friendly & Distraction Free Youtube based on Piped APIs</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  target="_blank"
+                  href="https://justanotherweathersite.netlify.app/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" href="https://reac-radio.vercel.app/">
+                  <h3 class="project-title">Weather App</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/reacRadio.JPG" alt="finance" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  target="_blank"
+                  href="https://food-quest-anytime.netlify.app/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">ReacRadio</h3>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Radio streaming web App using radio-browser.info API.</p>
+                  <h3 class="project-title">FoodQuest</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web front-end development</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" href="https://justanotherweathersite.netlify.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Weather App</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" href="https://food-quest-anytime.netlify.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">FoodQuest</h3>
-
-                <p class="project-category">Web front-end development</p>
-
-              </a>
-            </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a target="_blank" href="https://just-a-quote.netlify.app/">
 
                 <figure class="project-img">
@@ -477,47 +524,50 @@
               </a>
             </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a target="_blank" href="https://minimaltodolist.netlify.app/">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a target="_blank" href="https://minimaltodolist.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
+                  <h3 class="project-title">To-Do List</h3>
 
-                <h3 class="project-title">To-Do List</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
 
-                <p class="project-category">Web development</p>
-
-              </a>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
